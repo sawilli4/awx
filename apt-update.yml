@@ -1,19 +1,7 @@
-- hosts: apt
-  tasks:
-  - name: Update all installed packages using APT module
+ - name: Run the equivalent of "apt-get update" as a separate step
     apt:
-      name: '*'
-      state: latest
-      update_cache: yes
-      only_upgrade: yes
-    register: apt_update_status
-
-  - name: Remove packages not needed anymore
+      update_cache: true
+      cache_valid_time: 3600
+  - name: Update all packages to the latest version
     apt:
-      autoremove: yes
-
-  - name: Reboot when packages were updated
-    reboot:
-      post_reboot_delay: 60
-    when: apt_update_status.changed
-
+      upgrade: dist
