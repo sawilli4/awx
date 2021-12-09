@@ -2,6 +2,6 @@
    apt:
      update_cache: true
      cache_valid_time: 3600
-  - name: Update all packages to the latest version
-    apt:
-      upgrade: dist
+ - name: Update all packages to the latest version
+   apt:
+     upgrade: dist
