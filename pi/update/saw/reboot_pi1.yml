@@ -1,5 +1,5 @@
-- hosts: TestPi
+- hosts: 192.168.3.4
   remote_user: root
   tasks:
-   - name: TestPi
+   - name: 192.168.3.4
      reboot:
