@@ -1,5 +1,0 @@
--
-  remote_user: root
-  tasks:
-   - name: reboot
-     reboot:
