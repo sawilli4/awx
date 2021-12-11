@@ -1,4 +1,4 @@
-- inventory: TestPi
+- hosts: TestPi
   remote_user: root
   tasks:
    - name: TestPi
