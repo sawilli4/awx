@@ -1,5 +1,5 @@
-- hosts: Test_Pi
+- hosts: Test Pi
   remote_user: root
   tasks:
-   - name: Test_Pi
+   - name: Test Pi
      reboot:
