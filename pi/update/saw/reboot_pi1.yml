@@ -1,5 +1,5 @@
-- hosts: pi1_without_camera
+- hosts: Test_Pi
   remote_user: root
   tasks:
-   - name: reboot p1
+   - name: Test_Pi
      reboot:
